@@ -113,11 +113,50 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-/* line 4, scss/main.scss */
+@media screen and (max-width: 768px) {
+  /* line 11, scss/_mobile.scss */
+  main {
+    align-items: center;
+    text-align: center; }
+    /* line 15, scss/_mobile.scss */
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  /* line 21, scss/_mobile.scss */
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    /* line 27, scss/_mobile.scss */
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  /* line 32, scss/_mobile.scss */
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  /* line 38, scss/_mobile.scss */
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    /* line 42, scss/_mobile.scss */
+    .menu-branding .portrait {
+      background: url("../img/Johnsm.jpeg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  /* line 52, scss/_mobile.scss */
+  main#home h1 {
+    margin-top: 10vh; } }
+
+/* line 5, scss/main.scss */
 * {
   box-sizing: border-box; }
 
-/* line 8, scss/main.scss */
+/* line 9, scss/main.scss */
 body {
   background: #444;
   color: #fff;
@@ -141,18 +180,18 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.5); }
 
-/* line 19, scss/main.scss */
+/* line 20, scss/main.scss */
 h1,
 h2,
 h3 {
   margin: 0;
   font-weight: 400; }
-  /* line 25, scss/main.scss */
+  /* line 26, scss/main.scss */
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     font-size: 3rem; }
-  /* line 29, scss/main.scss */
+  /* line 30, scss/main.scss */
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -160,38 +199,38 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
-/* line 36, scss/main.scss */
+/* line 37, scss/main.scss */
 a {
   color: #fff;
   text-decoration: none; }
 
-/* line 41, scss/main.scss */
+/* line 42, scss/main.scss */
 header {
   position: fixed;
   z-index: 2;
   width: 100%; }
 
-/* line 47, scss/main.scss */
+/* line 48, scss/main.scss */
 .text-secondary {
   color: #eece1a; }
 
-/* line 51, scss/main.scss */
+/* line 52, scss/main.scss */
 main {
   padding: 4rem;
   height: 100%; }
-  /* line 55, scss/main.scss */
+  /* line 56, scss/main.scss */
   main icons {
     margin-top: 1rem; }
-  /* line 59, scss/main.scss */
+  /* line 60, scss/main.scss */
   main a {
     padding: 0.4rem; }
-    /* line 62, scss/main.scss */
+    /* line 63, scss/main.scss */
     main a:hover {
       color: #eece1a;
       transition: all 0.5s ease-in; }
-  /* line 68, scss/main.scss */
+  /* line 69, scss/main.scss */
   main#home {
     overflow: hidden; }
-    /* line 70, scss/main.scss */
+    /* line 71, scss/main.scss */
     main#home h1 {
       margin-top: 20vh; }
